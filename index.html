@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Grocery List - Ryan Lei</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+
+<body onload="initialize();">
+    <h2>Project 4 - Grocery List</h2>
+    <img src="img/logo.png" alt="logo" />
+    <p>
+        To add or delete groceries, enter the name of the food then press the button
+        <br>
+        <br>
+        To move groceries up or down, enter the number that is located on the left 
+        <br>
+        of the item in the list then press the button
+    </p>
+    <div class="command">
+        <button onclick="addFood();">Add Grocery</button>
+        <button onclick="deleteFood();">Delete Grocery</button>
+        <button onclick="array_moveUp(-1);">Move Up</button>
+        <button onclick="array_moveUp(1);">Move Down</button>
+        <br>
+        <label>Item: <input type="text" id="foodsel"></label>
+        <div class="list">
+            <div id="list"></div>
+        </div>
+    </div>
+</body>
+
+</html>
